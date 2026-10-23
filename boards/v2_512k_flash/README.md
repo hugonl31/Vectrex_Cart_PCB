@@ -8,6 +8,8 @@
 **Schematic:** [images/schematic.svg](images/schematic.svg) (drawn from the board's own connections) -
 **copper:** [front](images/pcb_front.svg), [back](images/pcb_back.svg).
 
+(The renders show the flash with its maker's 3D model; the board file itself refers to KiCad's PLCC-32 socket model.)
+
 Built from the v1 64K board (`../v1_27c512_64k`): the same outline, edge fingers, Vectrex
 logos (front and back), mounting holes, GND fill and "THIS SIDE UP". 54 x 66 mm, 2 layers.
 
