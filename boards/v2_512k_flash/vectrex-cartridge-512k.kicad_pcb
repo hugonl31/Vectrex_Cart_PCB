@@ -2857,9 +2857,9 @@
 			(uuid "13c83edd-022a-40e8-bb45-0bb40ebe68ff")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_LCC.3dshapes/PLCC-32_THT-Socket.wrl"
+		(model "${KIPRJMOD}/../../libs/3d/PLCC-32_THT-Socket.wrl"
 			(offset
-				(xyz 0 0 0)
+				(xyz -1.27 -5.08 0)
 			)
 			(scale
 				(xyz 1 1 1)

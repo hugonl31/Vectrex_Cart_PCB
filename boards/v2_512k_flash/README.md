@@ -8,7 +8,9 @@
 **Schematic:** [images/schematic.svg](images/schematic.svg) (drawn from the board's own connections) -
 **copper:** [front](images/pcb_front.svg), [back](images/pcb_back.svg).
 
-(The renders show the flash with its maker's 3D model; the board file itself refers to KiCad's PLCC-32 socket model.)
+(The renders show the flash with its maker's 3D model in the socket. KiCad has no PLCC-32 socket model, so this
+repository has a simple one of its own, `libs/3d/PLCC-32_THT-Socket.wrl` (made by `libs/3d/socket_wrl.py`); the board
+file uses it.)
 
 Built from the v1 64K board (`../v1_27c512_64k`): the same outline, edge fingers, Vectrex
 logos (front and back), mounting holes, GND fill and "THIS SIDE UP". 54 x 66 mm, 2 layers.
