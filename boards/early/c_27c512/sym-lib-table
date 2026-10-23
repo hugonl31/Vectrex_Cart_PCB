@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "vectrex-edge-connector")(type "KiCad")(uri "${KIPRJMOD}/../../../libs/vectrex-edge-connector.kicad_sym")(options "")(descr ""))
-  (lib (name "ds2431")(type "KiCad")(uri "${KIPRJMOD}/../../../libs/DS2431.kicad_sym")(options "")(descr ""))
-)

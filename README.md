@@ -26,7 +26,6 @@ board has its KiCad files, Gerbers for a board maker, 3D renders, its copper lay
 | <img src="boards/v1_27c512_64k/images/render_front.png" width="150"> | [64K](boards/v1_27c512_64k) | 27C512 / W27C512 + DS2431 | 32 or 64 KB | any game up to 64 KB, with PB6 bank switching and an optional save chip |
 | <img src="boards/v1_28c64_8k_gce/images/render_front.png" width="150"> | [8K GCE](boards/v1_28c64_8k_gce) | 28C64 EEPROM | 8 KB | the original GCE releases (4 or 8 KB); keep its jumper on write-protect |
 | <img src="boards/v2_512k_flash/images/render_front.png" width="150"> | [512K v2](boards/v2_512k_flash) | SST39SF040 flash + 74HC377 latch | 512 KB | big bank-switched games, saving into the flash |
-| <img src="boards/early/b_duo_28c64_27c512/images/render_front.png" width="150"> | [early boards](boards/early) | 28C64 / 27C512 | 8-32 KB | the first versions, for reference |
 
 All boards share one outline (54 x 66 mm, 1.6 mm, ENIG, bevelled edge fingers), so they all fit the
 [shell](case).
