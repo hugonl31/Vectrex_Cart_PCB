@@ -1,0 +1,484 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="890" viewBox="0 0 1600 890" font-family="Consolas, Menlo, monospace">
+<style>.bg{fill:#fffdf6}.part{fill:#fff8d8;stroke:#7a2020;stroke-width:2}.pin{stroke:#7a2020;stroke-width:1.5}.num{font-size:10px;fill:#7a2020}.pname{font-size:12px;fill:#333}.net{font-size:12px;fill:#0a5f8f;font-weight:bold}.nc{font-size:13px;fill:#b00}.ref{font-size:14px;fill:#7a2020;text-anchor:middle;font-weight:bold}.ptitle{font-size:12px;fill:#555;text-anchor:middle}.title{font-size:20px;font-weight:bold;fill:#222}.sub{font-size:12px;fill:#555}.note{font-size:12px;fill:#444}</style>
+<rect width="100%" height="100%" class="bg"/>
+<text x="40" y="34" class="title">512K cartridge v2 - SST39SF040 flash with a 74HC377 bank latch</text>
+<text x="40" y="54" class="sub">Pins with the same blue net name are connected. x = not connected. Drawn from the PCB file.</text>
+<rect x="130" y="80" width="150" height="364" class="part"/>
+<text x="205" y="72" class="ref">CON1</text>
+<text x="205" y="460" class="ptitle">Cartridge port (edge fingers)</text>
+<line x1="130" y1="110" x2="100" y2="110" class="pin"/>
+<text x="126" y="107" class="num" text-anchor="end">1</text>
+<text x="96" y="114" class="net" text-anchor="end">/HALT</text>
+<line x1="130" y1="128" x2="100" y2="128" class="pin"/>
+<text x="126" y="125" class="num" text-anchor="end">3</text>
+<text x="96" y="132" class="net" text-anchor="end">A7</text>
+<line x1="130" y1="146" x2="100" y2="146" class="pin"/>
+<text x="126" y="143" class="num" text-anchor="end">5</text>
+<text x="96" y="150" class="net" text-anchor="end">A6</text>
+<line x1="130" y1="164" x2="100" y2="164" class="pin"/>
+<text x="126" y="161" class="num" text-anchor="end">7</text>
+<text x="96" y="168" class="net" text-anchor="end">A5</text>
+<line x1="130" y1="182" x2="100" y2="182" class="pin"/>
+<text x="126" y="179" class="num" text-anchor="end">9</text>
+<text x="96" y="186" class="net" text-anchor="end">A4</text>
+<line x1="130" y1="200" x2="100" y2="200" class="pin"/>
+<text x="126" y="197" class="num" text-anchor="end">11</text>
+<text x="96" y="204" class="net" text-anchor="end">A3</text>
+<line x1="130" y1="218" x2="100" y2="218" class="pin"/>
+<text x="126" y="215" class="num" text-anchor="end">13</text>
+<text x="96" y="222" class="net" text-anchor="end">A2</text>
+<line x1="130" y1="236" x2="100" y2="236" class="pin"/>
+<text x="126" y="233" class="num" text-anchor="end">15</text>
+<text x="96" y="240" class="net" text-anchor="end">A1</text>
+<line x1="130" y1="254" x2="100" y2="254" class="pin"/>
+<text x="126" y="251" class="num" text-anchor="end">17</text>
+<text x="96" y="258" class="net" text-anchor="end">A0</text>
+<line x1="130" y1="272" x2="100" y2="272" class="pin"/>
+<text x="126" y="269" class="num" text-anchor="end">19</text>
+<text x="96" y="276" class="net" text-anchor="end">D0</text>
+<line x1="130" y1="290" x2="100" y2="290" class="pin"/>
+<text x="126" y="287" class="num" text-anchor="end">21</text>
+<text x="96" y="294" class="net" text-anchor="end">D1</text>
+<line x1="130" y1="308" x2="100" y2="308" class="pin"/>
+<text x="126" y="305" class="num" text-anchor="end">23</text>
+<text x="96" y="312" class="net" text-anchor="end">D2</text>
+<line x1="130" y1="326" x2="100" y2="326" class="pin"/>
+<text x="126" y="323" class="num" text-anchor="end">25</text>
+<text x="96" y="330" class="net" text-anchor="end">GND</text>
+<line x1="130" y1="344" x2="100" y2="344" class="pin"/>
+<text x="126" y="341" class="num" text-anchor="end">27</text>
+<text x="96" y="348" class="net" text-anchor="end">GND</text>
+<line x1="130" y1="362" x2="100" y2="362" class="pin"/>
+<text x="126" y="359" class="num" text-anchor="end">29</text>
+<text x="96" y="366" class="net" text-anchor="end">A12</text>
+<line x1="130" y1="380" x2="100" y2="380" class="pin"/>
+<text x="126" y="377" class="num" text-anchor="end">31</text>
+<text x="96" y="384" class="net" text-anchor="end">A13</text>
+<line x1="130" y1="398" x2="100" y2="398" class="pin"/>
+<text x="126" y="395" class="num" text-anchor="end">33</text>
+<text x="96" y="402" class="net" text-anchor="end">A14</text>
+<line x1="130" y1="416" x2="100" y2="416" class="pin"/>
+<text x="126" y="413" class="num" text-anchor="end">35</text>
+<text x="96" y="420" class="net" text-anchor="end">PB6</text>
+<line x1="280" y1="110" x2="310" y2="110" class="pin"/>
+<text x="284" y="107" class="num" text-anchor="start">2</text>
+<text x="314" y="114" class="net" text-anchor="start">+5V</text>
+<line x1="280" y1="128" x2="310" y2="128" class="pin"/>
+<text x="284" y="125" class="num" text-anchor="start">4</text>
+<text x="314" y="132" class="net" text-anchor="start">+5V</text>
+<line x1="280" y1="146" x2="310" y2="146" class="pin"/>
+<text x="284" y="143" class="num" text-anchor="start">6</text>
+<text x="314" y="150" class="net" text-anchor="start">A8</text>
+<line x1="280" y1="164" x2="310" y2="164" class="pin"/>
+<text x="284" y="161" class="num" text-anchor="start">8</text>
+<text x="314" y="168" class="net" text-anchor="start">A9</text>
+<line x1="280" y1="182" x2="310" y2="182" class="pin"/>
+<text x="284" y="179" class="num" text-anchor="start">10</text>
+<text x="314" y="186" class="net" text-anchor="start">A11</text>
+<line x1="280" y1="200" x2="310" y2="200" class="pin"/>
+<text x="284" y="197" class="num" text-anchor="start">12</text>
+<text x="314" y="204" class="net" text-anchor="start">/OE</text>
+<line x1="280" y1="218" x2="310" y2="218" class="pin"/>
+<text x="284" y="215" class="num" text-anchor="start">14</text>
+<text x="314" y="222" class="net" text-anchor="start">A10</text>
+<line x1="280" y1="236" x2="310" y2="236" class="pin"/>
+<text x="284" y="233" class="num" text-anchor="start">16</text>
+<text x="314" y="240" class="net" text-anchor="start">/CE</text>
+<line x1="280" y1="254" x2="310" y2="254" class="pin"/>
+<text x="284" y="251" class="num" text-anchor="start">18</text>
+<text x="314" y="258" class="net" text-anchor="start">D7</text>
+<line x1="280" y1="272" x2="310" y2="272" class="pin"/>
+<text x="284" y="269" class="num" text-anchor="start">20</text>
+<text x="314" y="276" class="net" text-anchor="start">D6</text>
+<line x1="280" y1="290" x2="310" y2="290" class="pin"/>
+<text x="284" y="287" class="num" text-anchor="start">22</text>
+<text x="314" y="294" class="net" text-anchor="start">D5</text>
+<line x1="280" y1="308" x2="310" y2="308" class="pin"/>
+<text x="284" y="305" class="num" text-anchor="start">24</text>
+<text x="314" y="312" class="net" text-anchor="start">D4</text>
+<line x1="280" y1="326" x2="310" y2="326" class="pin"/>
+<text x="284" y="323" class="num" text-anchor="start">26</text>
+<text x="314" y="330" class="net" text-anchor="start">D3</text>
+<line x1="280" y1="344" x2="310" y2="344" class="pin"/>
+<text x="284" y="341" class="num" text-anchor="start">28</text>
+<text x="314" y="348" class="net" text-anchor="start">GND</text>
+<line x1="280" y1="362" x2="310" y2="362" class="pin"/>
+<text x="284" y="359" class="num" text-anchor="start">30</text>
+<text x="314" y="366" class="net" text-anchor="start">R/W</text>
+<line x1="280" y1="380" x2="310" y2="380" class="pin"/>
+<text x="284" y="377" class="num" text-anchor="start">32</text>
+<text x="314" y="384" class="net" text-anchor="start">/CART</text>
+<line x1="280" y1="398" x2="310" y2="398" class="pin"/>
+<text x="284" y="395" class="num" text-anchor="start">34</text>
+<text x="314" y="402" class="net" text-anchor="start">/NMI</text>
+<line x1="280" y1="416" x2="310" y2="416" class="pin"/>
+<text x="284" y="413" class="num" text-anchor="start">36</text>
+<text x="314" y="420" class="net" text-anchor="start">/IRQ</text>
+<rect x="510" y="80" width="150" height="328" class="part"/>
+<text x="585" y="72" class="ref">U1</text>
+<text x="585" y="424" class="ptitle">SST39SF040 (PLCC-32 socket)</text>
+<line x1="510" y1="110" x2="480" y2="110" class="pin"/>
+<text x="506" y="107" class="num" text-anchor="end">1</text>
+<text x="516" y="114" class="pname" text-anchor="start">A18</text>
+<text x="476" y="114" class="net" text-anchor="end">BA18</text>
+<line x1="510" y1="128" x2="480" y2="128" class="pin"/>
+<text x="506" y="125" class="num" text-anchor="end">2</text>
+<text x="516" y="132" class="pname" text-anchor="start">A16</text>
+<text x="476" y="132" class="net" text-anchor="end">BA16</text>
+<line x1="510" y1="146" x2="480" y2="146" class="pin"/>
+<text x="506" y="143" class="num" text-anchor="end">3</text>
+<text x="516" y="150" class="pname" text-anchor="start">A15</text>
+<text x="476" y="150" class="net" text-anchor="end">PB6</text>
+<line x1="510" y1="164" x2="480" y2="164" class="pin"/>
+<text x="506" y="161" class="num" text-anchor="end">4</text>
+<text x="516" y="168" class="pname" text-anchor="start">A12</text>
+<text x="476" y="168" class="net" text-anchor="end">A12</text>
+<line x1="510" y1="182" x2="480" y2="182" class="pin"/>
+<text x="506" y="179" class="num" text-anchor="end">5</text>
+<text x="516" y="186" class="pname" text-anchor="start">A7</text>
+<text x="476" y="186" class="net" text-anchor="end">A7</text>
+<line x1="510" y1="200" x2="480" y2="200" class="pin"/>
+<text x="506" y="197" class="num" text-anchor="end">6</text>
+<text x="516" y="204" class="pname" text-anchor="start">A6</text>
+<text x="476" y="204" class="net" text-anchor="end">A6</text>
+<line x1="510" y1="218" x2="480" y2="218" class="pin"/>
+<text x="506" y="215" class="num" text-anchor="end">7</text>
+<text x="516" y="222" class="pname" text-anchor="start">A5</text>
+<text x="476" y="222" class="net" text-anchor="end">A5</text>
+<line x1="510" y1="236" x2="480" y2="236" class="pin"/>
+<text x="506" y="233" class="num" text-anchor="end">8</text>
+<text x="516" y="240" class="pname" text-anchor="start">A4</text>
+<text x="476" y="240" class="net" text-anchor="end">A4</text>
+<line x1="510" y1="254" x2="480" y2="254" class="pin"/>
+<text x="506" y="251" class="num" text-anchor="end">9</text>
+<text x="516" y="258" class="pname" text-anchor="start">A3</text>
+<text x="476" y="258" class="net" text-anchor="end">A3</text>
+<line x1="510" y1="272" x2="480" y2="272" class="pin"/>
+<text x="506" y="269" class="num" text-anchor="end">10</text>
+<text x="516" y="276" class="pname" text-anchor="start">A2</text>
+<text x="476" y="276" class="net" text-anchor="end">A2</text>
+<line x1="510" y1="290" x2="480" y2="290" class="pin"/>
+<text x="506" y="287" class="num" text-anchor="end">11</text>
+<text x="516" y="294" class="pname" text-anchor="start">A1</text>
+<text x="476" y="294" class="net" text-anchor="end">A1</text>
+<line x1="510" y1="308" x2="480" y2="308" class="pin"/>
+<text x="506" y="305" class="num" text-anchor="end">12</text>
+<text x="516" y="312" class="pname" text-anchor="start">A0</text>
+<text x="476" y="312" class="net" text-anchor="end">A0</text>
+<line x1="510" y1="326" x2="480" y2="326" class="pin"/>
+<text x="506" y="323" class="num" text-anchor="end">13</text>
+<text x="516" y="330" class="pname" text-anchor="start">DQ0</text>
+<text x="476" y="330" class="net" text-anchor="end">D0</text>
+<line x1="510" y1="344" x2="480" y2="344" class="pin"/>
+<text x="506" y="341" class="num" text-anchor="end">14</text>
+<text x="516" y="348" class="pname" text-anchor="start">DQ1</text>
+<text x="476" y="348" class="net" text-anchor="end">D1</text>
+<line x1="510" y1="362" x2="480" y2="362" class="pin"/>
+<text x="506" y="359" class="num" text-anchor="end">15</text>
+<text x="516" y="366" class="pname" text-anchor="start">DQ2</text>
+<text x="476" y="366" class="net" text-anchor="end">D2</text>
+<line x1="510" y1="380" x2="480" y2="380" class="pin"/>
+<text x="506" y="377" class="num" text-anchor="end">16</text>
+<text x="516" y="384" class="pname" text-anchor="start">VSS</text>
+<text x="476" y="384" class="net" text-anchor="end">GND</text>
+<line x1="660" y1="110" x2="690" y2="110" class="pin"/>
+<text x="664" y="107" class="num" text-anchor="start">32</text>
+<text x="654" y="114" class="pname" text-anchor="end">VDD</text>
+<text x="694" y="114" class="net" text-anchor="start">+5V</text>
+<line x1="660" y1="128" x2="690" y2="128" class="pin"/>
+<text x="664" y="125" class="num" text-anchor="start">31</text>
+<text x="654" y="132" class="pname" text-anchor="end">/WE</text>
+<text x="694" y="132" class="net" text-anchor="start">FL_WE</text>
+<line x1="660" y1="146" x2="690" y2="146" class="pin"/>
+<text x="664" y="143" class="num" text-anchor="start">30</text>
+<text x="654" y="150" class="pname" text-anchor="end">A17</text>
+<text x="694" y="150" class="net" text-anchor="start">BA17</text>
+<line x1="660" y1="164" x2="690" y2="164" class="pin"/>
+<text x="664" y="161" class="num" text-anchor="start">29</text>
+<text x="654" y="168" class="pname" text-anchor="end">A14</text>
+<text x="694" y="168" class="net" text-anchor="start">A14</text>
+<line x1="660" y1="182" x2="690" y2="182" class="pin"/>
+<text x="664" y="179" class="num" text-anchor="start">28</text>
+<text x="654" y="186" class="pname" text-anchor="end">A13</text>
+<text x="694" y="186" class="net" text-anchor="start">A13</text>
+<line x1="660" y1="200" x2="690" y2="200" class="pin"/>
+<text x="664" y="197" class="num" text-anchor="start">27</text>
+<text x="654" y="204" class="pname" text-anchor="end">A8</text>
+<text x="694" y="204" class="net" text-anchor="start">A8</text>
+<line x1="660" y1="218" x2="690" y2="218" class="pin"/>
+<text x="664" y="215" class="num" text-anchor="start">26</text>
+<text x="654" y="222" class="pname" text-anchor="end">A9</text>
+<text x="694" y="222" class="net" text-anchor="start">A9</text>
+<line x1="660" y1="236" x2="690" y2="236" class="pin"/>
+<text x="664" y="233" class="num" text-anchor="start">25</text>
+<text x="654" y="240" class="pname" text-anchor="end">A11</text>
+<text x="694" y="240" class="net" text-anchor="start">A11</text>
+<line x1="660" y1="254" x2="690" y2="254" class="pin"/>
+<text x="664" y="251" class="num" text-anchor="start">24</text>
+<text x="654" y="258" class="pname" text-anchor="end">/OE</text>
+<text x="694" y="258" class="net" text-anchor="start">FL_OE</text>
+<line x1="660" y1="272" x2="690" y2="272" class="pin"/>
+<text x="664" y="269" class="num" text-anchor="start">23</text>
+<text x="654" y="276" class="pname" text-anchor="end">A10</text>
+<text x="694" y="276" class="net" text-anchor="start">A10</text>
+<line x1="660" y1="290" x2="690" y2="290" class="pin"/>
+<text x="664" y="287" class="num" text-anchor="start">22</text>
+<text x="654" y="294" class="pname" text-anchor="end">/CE</text>
+<text x="694" y="294" class="net" text-anchor="start">/CE</text>
+<line x1="660" y1="308" x2="690" y2="308" class="pin"/>
+<text x="664" y="305" class="num" text-anchor="start">21</text>
+<text x="654" y="312" class="pname" text-anchor="end">DQ7</text>
+<text x="694" y="312" class="net" text-anchor="start">D7</text>
+<line x1="660" y1="326" x2="690" y2="326" class="pin"/>
+<text x="664" y="323" class="num" text-anchor="start">20</text>
+<text x="654" y="330" class="pname" text-anchor="end">DQ6</text>
+<text x="694" y="330" class="net" text-anchor="start">D6</text>
+<line x1="660" y1="344" x2="690" y2="344" class="pin"/>
+<text x="664" y="341" class="num" text-anchor="start">19</text>
+<text x="654" y="348" class="pname" text-anchor="end">DQ5</text>
+<text x="694" y="348" class="net" text-anchor="start">D5</text>
+<line x1="660" y1="362" x2="690" y2="362" class="pin"/>
+<text x="664" y="359" class="num" text-anchor="start">18</text>
+<text x="654" y="366" class="pname" text-anchor="end">DQ4</text>
+<text x="694" y="366" class="net" text-anchor="start">D4</text>
+<line x1="660" y1="380" x2="690" y2="380" class="pin"/>
+<text x="664" y="377" class="num" text-anchor="start">17</text>
+<text x="654" y="384" class="pname" text-anchor="end">DQ3</text>
+<text x="694" y="384" class="net" text-anchor="start">D3</text>
+<rect x="890" y="80" width="150" height="220" class="part"/>
+<text x="965" y="72" class="ref">U2</text>
+<text x="965" y="316" class="ptitle">74HC377</text>
+<line x1="890" y1="110" x2="860" y2="110" class="pin"/>
+<text x="886" y="107" class="num" text-anchor="end">1</text>
+<text x="896" y="114" class="pname" text-anchor="start">/E</text>
+<text x="856" y="114" class="net" text-anchor="end">R/W</text>
+<line x1="890" y1="128" x2="860" y2="128" class="pin"/>
+<text x="886" y="125" class="num" text-anchor="end">2</text>
+<text x="896" y="132" class="pname" text-anchor="start">Q0</text>
+<text x="856" y="132" class="net" text-anchor="end">BA16</text>
+<line x1="890" y1="146" x2="860" y2="146" class="pin"/>
+<text x="886" y="143" class="num" text-anchor="end">3</text>
+<text x="896" y="150" class="pname" text-anchor="start">D0</text>
+<text x="856" y="150" class="net" text-anchor="end">D0</text>
+<line x1="890" y1="164" x2="860" y2="164" class="pin"/>
+<text x="886" y="161" class="num" text-anchor="end">4</text>
+<text x="896" y="168" class="pname" text-anchor="start">D1</text>
+<text x="856" y="168" class="net" text-anchor="end">D1</text>
+<line x1="890" y1="182" x2="860" y2="182" class="pin"/>
+<text x="886" y="179" class="num" text-anchor="end">5</text>
+<text x="896" y="186" class="pname" text-anchor="start">Q1</text>
+<text x="856" y="186" class="net" text-anchor="end">BA17</text>
+<line x1="890" y1="200" x2="860" y2="200" class="pin"/>
+<text x="886" y="197" class="num" text-anchor="end">6</text>
+<text x="896" y="204" class="pname" text-anchor="start">Q2</text>
+<text x="856" y="204" class="net" text-anchor="end">BA18</text>
+<line x1="890" y1="218" x2="860" y2="218" class="pin"/>
+<text x="886" y="215" class="num" text-anchor="end">7</text>
+<text x="896" y="222" class="pname" text-anchor="start">D2</text>
+<text x="856" y="222" class="net" text-anchor="end">D2</text>
+<line x1="890" y1="236" x2="860" y2="236" class="pin"/>
+<text x="886" y="233" class="num" text-anchor="end">8</text>
+<text x="896" y="240" class="pname" text-anchor="start">D3</text>
+<text x="856" y="240" class="net" text-anchor="end">D3</text>
+<line x1="890" y1="254" x2="860" y2="254" class="pin"/>
+<text x="886" y="251" class="num" text-anchor="end">9</text>
+<text x="896" y="258" class="pname" text-anchor="start">Q3</text>
+<text x="860" y="258" class="nc" text-anchor="middle">x</text>
+<line x1="890" y1="272" x2="860" y2="272" class="pin"/>
+<text x="886" y="269" class="num" text-anchor="end">10</text>
+<text x="896" y="276" class="pname" text-anchor="start">GND</text>
+<text x="856" y="276" class="net" text-anchor="end">GND</text>
+<line x1="1040" y1="110" x2="1070" y2="110" class="pin"/>
+<text x="1044" y="107" class="num" text-anchor="start">20</text>
+<text x="1034" y="114" class="pname" text-anchor="end">VCC</text>
+<text x="1074" y="114" class="net" text-anchor="start">+5V</text>
+<line x1="1040" y1="128" x2="1070" y2="128" class="pin"/>
+<text x="1044" y="125" class="num" text-anchor="start">19</text>
+<text x="1034" y="132" class="pname" text-anchor="end">Q7</text>
+<text x="1070" y="132" class="nc" text-anchor="middle">x</text>
+<line x1="1040" y1="146" x2="1070" y2="146" class="pin"/>
+<text x="1044" y="143" class="num" text-anchor="start">18</text>
+<text x="1034" y="150" class="pname" text-anchor="end">D7</text>
+<text x="1074" y="150" class="net" text-anchor="start">D7</text>
+<line x1="1040" y1="164" x2="1070" y2="164" class="pin"/>
+<text x="1044" y="161" class="num" text-anchor="start">17</text>
+<text x="1034" y="168" class="pname" text-anchor="end">D6</text>
+<text x="1074" y="168" class="net" text-anchor="start">D6</text>
+<line x1="1040" y1="182" x2="1070" y2="182" class="pin"/>
+<text x="1044" y="179" class="num" text-anchor="start">16</text>
+<text x="1034" y="186" class="pname" text-anchor="end">Q6</text>
+<text x="1070" y="186" class="nc" text-anchor="middle">x</text>
+<line x1="1040" y1="200" x2="1070" y2="200" class="pin"/>
+<text x="1044" y="197" class="num" text-anchor="start">15</text>
+<text x="1034" y="204" class="pname" text-anchor="end">Q5</text>
+<text x="1070" y="204" class="nc" text-anchor="middle">x</text>
+<line x1="1040" y1="218" x2="1070" y2="218" class="pin"/>
+<text x="1044" y="215" class="num" text-anchor="start">14</text>
+<text x="1034" y="222" class="pname" text-anchor="end">D5</text>
+<text x="1074" y="222" class="net" text-anchor="start">D5</text>
+<line x1="1040" y1="236" x2="1070" y2="236" class="pin"/>
+<text x="1044" y="233" class="num" text-anchor="start">13</text>
+<text x="1034" y="240" class="pname" text-anchor="end">D4</text>
+<text x="1074" y="240" class="net" text-anchor="start">D4</text>
+<line x1="1040" y1="254" x2="1070" y2="254" class="pin"/>
+<text x="1044" y="251" class="num" text-anchor="start">12</text>
+<text x="1034" y="258" class="pname" text-anchor="end">Q4</text>
+<text x="1070" y="258" class="nc" text-anchor="middle">x</text>
+<line x1="1040" y1="272" x2="1070" y2="272" class="pin"/>
+<text x="1044" y="269" class="num" text-anchor="start">11</text>
+<text x="1034" y="276" class="pname" text-anchor="end">CP</text>
+<text x="1074" y="276" class="net" text-anchor="start">LCLK</text>
+<rect x="1270" y="80" width="150" height="166" class="part"/>
+<text x="1345" y="72" class="ref">U3</text>
+<text x="1345" y="262" class="ptitle">74HC00</text>
+<line x1="1270" y1="110" x2="1240" y2="110" class="pin"/>
+<text x="1266" y="107" class="num" text-anchor="end">1</text>
+<text x="1276" y="114" class="pname" text-anchor="start">1A</text>
+<text x="1236" y="114" class="net" text-anchor="end">/OE</text>
+<line x1="1270" y1="128" x2="1240" y2="128" class="pin"/>
+<text x="1266" y="125" class="num" text-anchor="end">2</text>
+<text x="1276" y="132" class="pname" text-anchor="start">1B</text>
+<text x="1236" y="132" class="net" text-anchor="end">/OE</text>
+<line x1="1270" y1="146" x2="1240" y2="146" class="pin"/>
+<text x="1266" y="143" class="num" text-anchor="end">3</text>
+<text x="1276" y="150" class="pname" text-anchor="start">1Y</text>
+<text x="1236" y="150" class="net" text-anchor="end">E</text>
+<line x1="1270" y1="164" x2="1240" y2="164" class="pin"/>
+<text x="1266" y="161" class="num" text-anchor="end">4</text>
+<text x="1276" y="168" class="pname" text-anchor="start">2A</text>
+<text x="1236" y="168" class="net" text-anchor="end">E</text>
+<line x1="1270" y1="182" x2="1240" y2="182" class="pin"/>
+<text x="1266" y="179" class="num" text-anchor="end">5</text>
+<text x="1276" y="186" class="pname" text-anchor="start">2B</text>
+<text x="1236" y="186" class="net" text-anchor="end">R/W</text>
+<line x1="1270" y1="200" x2="1240" y2="200" class="pin"/>
+<text x="1266" y="197" class="num" text-anchor="end">6</text>
+<text x="1276" y="204" class="pname" text-anchor="start">2Y</text>
+<text x="1236" y="204" class="net" text-anchor="end">FL_OE</text>
+<line x1="1270" y1="218" x2="1240" y2="218" class="pin"/>
+<text x="1266" y="215" class="num" text-anchor="end">7</text>
+<text x="1276" y="222" class="pname" text-anchor="start">GND</text>
+<text x="1236" y="222" class="net" text-anchor="end">GND</text>
+<line x1="1420" y1="110" x2="1450" y2="110" class="pin"/>
+<text x="1424" y="107" class="num" text-anchor="start">14</text>
+<text x="1414" y="114" class="pname" text-anchor="end">VCC</text>
+<text x="1454" y="114" class="net" text-anchor="start">+5V</text>
+<line x1="1420" y1="128" x2="1450" y2="128" class="pin"/>
+<text x="1424" y="125" class="num" text-anchor="start">13</text>
+<text x="1414" y="132" class="pname" text-anchor="end">4B</text>
+<text x="1454" y="132" class="net" text-anchor="start">GND</text>
+<line x1="1420" y1="146" x2="1450" y2="146" class="pin"/>
+<text x="1424" y="143" class="num" text-anchor="start">12</text>
+<text x="1414" y="150" class="pname" text-anchor="end">4A</text>
+<text x="1454" y="150" class="net" text-anchor="start">GND</text>
+<line x1="1420" y1="164" x2="1450" y2="164" class="pin"/>
+<text x="1424" y="161" class="num" text-anchor="start">11</text>
+<text x="1414" y="168" class="pname" text-anchor="end">4Y</text>
+<text x="1450" y="168" class="nc" text-anchor="middle">x</text>
+<line x1="1420" y1="182" x2="1450" y2="182" class="pin"/>
+<text x="1424" y="179" class="num" text-anchor="start">10</text>
+<text x="1414" y="186" class="pname" text-anchor="end">3B</text>
+<text x="1454" y="186" class="net" text-anchor="start">GND</text>
+<line x1="1420" y1="200" x2="1450" y2="200" class="pin"/>
+<text x="1424" y="197" class="num" text-anchor="start">9</text>
+<text x="1414" y="204" class="pname" text-anchor="end">3A</text>
+<text x="1454" y="204" class="net" text-anchor="start">GND</text>
+<line x1="1420" y1="218" x2="1450" y2="218" class="pin"/>
+<text x="1424" y="215" class="num" text-anchor="start">8</text>
+<text x="1414" y="222" class="pname" text-anchor="end">3Y</text>
+<text x="1450" y="222" class="nc" text-anchor="middle">x</text>
+<rect x="130" y="514" width="150" height="76" class="part"/>
+<text x="205" y="506" class="ref">C1</text>
+<text x="205" y="606" class="ptitle">Capacitor 100 nF</text>
+<line x1="130" y1="544" x2="100" y2="544" class="pin"/>
+<text x="126" y="541" class="num" text-anchor="end">1</text>
+<text x="136" y="548" class="pname" text-anchor="start">1</text>
+<text x="96" y="548" class="net" text-anchor="end">+5V</text>
+<line x1="130" y1="562" x2="100" y2="562" class="pin"/>
+<text x="126" y="559" class="num" text-anchor="end">2</text>
+<text x="136" y="566" class="pname" text-anchor="start">2</text>
+<text x="96" y="566" class="net" text-anchor="end">GND</text>
+<rect x="510" y="514" width="150" height="76" class="part"/>
+<text x="585" y="506" class="ref">C2</text>
+<text x="585" y="606" class="ptitle">Capacitor 100 nF</text>
+<line x1="510" y1="544" x2="480" y2="544" class="pin"/>
+<text x="506" y="541" class="num" text-anchor="end">1</text>
+<text x="516" y="548" class="pname" text-anchor="start">1</text>
+<text x="476" y="548" class="net" text-anchor="end">+5V</text>
+<line x1="510" y1="562" x2="480" y2="562" class="pin"/>
+<text x="506" y="559" class="num" text-anchor="end">2</text>
+<text x="516" y="566" class="pname" text-anchor="start">2</text>
+<text x="476" y="566" class="net" text-anchor="end">GND</text>
+<rect x="890" y="514" width="150" height="76" class="part"/>
+<text x="965" y="506" class="ref">C3</text>
+<text x="965" y="606" class="ptitle">Capacitor 100 nF</text>
+<line x1="890" y1="544" x2="860" y2="544" class="pin"/>
+<text x="886" y="541" class="num" text-anchor="end">1</text>
+<text x="896" y="548" class="pname" text-anchor="start">1</text>
+<text x="856" y="548" class="net" text-anchor="end">+5V</text>
+<line x1="890" y1="562" x2="860" y2="562" class="pin"/>
+<text x="886" y="559" class="num" text-anchor="end">2</text>
+<text x="896" y="566" class="pname" text-anchor="start">2</text>
+<text x="856" y="566" class="net" text-anchor="end">GND</text>
+<rect x="1270" y="514" width="150" height="76" class="part"/>
+<text x="1345" y="506" class="ref">C4</text>
+<text x="1345" y="606" class="ptitle">Capacitor 100 nF</text>
+<line x1="1270" y1="544" x2="1240" y2="544" class="pin"/>
+<text x="1266" y="541" class="num" text-anchor="end">1</text>
+<text x="1276" y="548" class="pname" text-anchor="start">1</text>
+<text x="1236" y="548" class="net" text-anchor="end">+5V</text>
+<line x1="1270" y1="562" x2="1240" y2="562" class="pin"/>
+<text x="1266" y="559" class="num" text-anchor="end">2</text>
+<text x="1276" y="566" class="pname" text-anchor="start">2</text>
+<text x="1236" y="566" class="net" text-anchor="end">GND</text>
+<rect x="130" y="660" width="150" height="94" class="part"/>
+<text x="205" y="652" class="ref">JP2</text>
+<text x="205" y="770" class="ptitle">Solder jumper</text>
+<line x1="130" y1="690" x2="100" y2="690" class="pin"/>
+<text x="126" y="687" class="num" text-anchor="end">1</text>
+<text x="136" y="694" class="pname" text-anchor="start">1 saves</text>
+<text x="96" y="694" class="net" text-anchor="end">R/W</text>
+<line x1="130" y1="708" x2="100" y2="708" class="pin"/>
+<text x="126" y="705" class="num" text-anchor="end">2</text>
+<text x="136" y="712" class="pname" text-anchor="start">2</text>
+<text x="96" y="712" class="net" text-anchor="end">FL_WE</text>
+<line x1="130" y1="726" x2="100" y2="726" class="pin"/>
+<text x="126" y="723" class="num" text-anchor="end">3</text>
+<text x="136" y="730" class="pname" text-anchor="start">3 protect</text>
+<text x="96" y="730" class="net" text-anchor="end">+5V</text>
+<rect x="510" y="660" width="150" height="76" class="part"/>
+<text x="585" y="652" class="ref">R1</text>
+<text x="585" y="752" class="ptitle">Resistor 3.3 kOhm</text>
+<line x1="510" y1="690" x2="480" y2="690" class="pin"/>
+<text x="506" y="687" class="num" text-anchor="end">1</text>
+<text x="516" y="694" class="pname" text-anchor="start">1</text>
+<text x="476" y="694" class="net" text-anchor="end">PB6</text>
+<line x1="510" y1="708" x2="480" y2="708" class="pin"/>
+<text x="506" y="705" class="num" text-anchor="end">2</text>
+<text x="516" y="712" class="pname" text-anchor="start">2</text>
+<text x="476" y="712" class="net" text-anchor="end">+5V</text>
+<rect x="890" y="660" width="150" height="130" class="part"/>
+<text x="965" y="652" class="ref">U4</text>
+<text x="965" y="806" class="ptitle">74HC1G32</text>
+<line x1="890" y1="690" x2="860" y2="690" class="pin"/>
+<text x="886" y="687" class="num" text-anchor="end">1</text>
+<text x="896" y="694" class="pname" text-anchor="start">A</text>
+<text x="856" y="694" class="net" text-anchor="end">/CART</text>
+<line x1="890" y1="708" x2="860" y2="708" class="pin"/>
+<text x="886" y="705" class="num" text-anchor="end">2</text>
+<text x="896" y="712" class="pname" text-anchor="start">B</text>
+<text x="856" y="712" class="net" text-anchor="end">A14</text>
+<line x1="890" y1="726" x2="860" y2="726" class="pin"/>
+<text x="886" y="723" class="num" text-anchor="end">3</text>
+<text x="896" y="730" class="pname" text-anchor="start">GND</text>
+<text x="856" y="730" class="net" text-anchor="end">GND</text>
+<line x1="890" y1="744" x2="860" y2="744" class="pin"/>
+<text x="886" y="741" class="num" text-anchor="end">4</text>
+<text x="896" y="748" class="pname" text-anchor="start">Y</text>
+<text x="856" y="748" class="net" text-anchor="end">LCLK</text>
+<line x1="890" y1="762" x2="860" y2="762" class="pin"/>
+<text x="886" y="759" class="num" text-anchor="end">5</text>
+<text x="896" y="766" class="pname" text-anchor="start">VCC</text>
+<text x="856" y="766" class="net" text-anchor="end">+5V</text>
+<text x="40" y="850" class="note">A15 = PB6, A16-A18 = the latch (a write to $0000-$3FFF). U3 only lets the flash drive the bus on reads. U4: latch clock = /CART OR A14.</text>
+</svg>

@@ -1,0 +1,213 @@
+(footprint "Solder_Jumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip, labeled with numbers")
+	(tags "solder jumper open")
+	(property "Reference" "REF**"
+		(at 0 -1.8 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "de9dab55-ad03-4f95-aa6a-62fe57d205c3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Solder_Jumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+		(at 0 1.9 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1fa95b22-88b4-413b-aace-fac40fa91478")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "vectrex-cartridge:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c061e810-01c9-430a-a980-19048f54b457")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b33e501f-eb68-4330-9139-352fca9d9c6e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "056e3130-7597-4c21-b497-f1d3ad58b43c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -2.05 0.3)
+		(end -2.05 -0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cafcf5e1-06cd-48b1-b85b-c2a6ff8784c0")
+	)
+	(fp_line
+		(start -1.4 -1)
+		(end 1.4 -1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b20833b4-4004-4371-af83-925a12025c57")
+	)
+	(fp_line
+		(start 1.4 1)
+		(end -1.4 1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a4017cc5-8578-41ff-8937-26916dd695ce")
+	)
+	(fp_line
+		(start 2.05 -0.3)
+		(end 2.05 0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1cd738d8-e09a-4526-bd6b-e6206d64aed8")
+	)
+	(fp_arc
+		(start -2.05 -0.3)
+		(mid -1.844975 -0.794975)
+		(end -1.35 -1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "966cdec4-bed4-4740-a41a-dab90a5c6863")
+	)
+	(fp_arc
+		(start -1.35 1)
+		(mid -1.844975 0.794975)
+		(end -2.05 0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "87cb424c-1917-4064-9035-96b39e796584")
+	)
+	(fp_arc
+		(start 1.35 -1)
+		(mid 1.844975 -0.794975)
+		(end 2.05 -0.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b3fc203-d057-4907-9ac6-2abb8587e730")
+	)
+	(fp_arc
+		(start 2.05 0.3)
+		(mid 1.844975 0.794975)
+		(end 1.35 1)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8098724c-275b-4331-bc5f-2a8242995c80")
+	)
+	(fp_line
+		(start -2.3 -1.25)
+		(end -2.3 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ec79c291-e03e-4528-832f-1311d8a5801b")
+	)
+	(fp_line
+		(start -2.3 -1.25)
+		(end 2.3 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "60f69a54-d2fb-4cf7-8f46-64aa6a4edbe3")
+	)
+	(fp_line
+		(start 2.3 1.25)
+		(end -2.3 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "520c09a2-ae65-4ca8-81ea-272762b61e4e")
+	)
+	(fp_line
+		(start 2.3 1.25)
+		(end 2.3 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c9be858e-74f7-44cf-92a2-8c660c119627")
+	)
+	(pad "1" smd oval
+		(at -1.3 0 180)
+		(size 1 1.5)
+		(layers "F.Cu" "F.Mask")
+		(zone_connect 2)
+		(uuid "edc0856b-070c-4222-aefe-074787944d2f")
+	)
+	(pad "2" smd oval
+		(at 0 0 180)
+		(size 1 1.5)
+		(layers "F.Cu" "F.Mask")
+		(uuid "ae58d8c8-1d6f-4d97-a97c-1c06722d1d77")
+	)
+	(pad "3" smd oval
+		(at 1.3 0)
+		(size 1 1.5)
+		(layers "F.Cu" "F.Mask")
+		(zone_connect 2)
+		(uuid "ce4baebf-f904-4688-b3d5-7b8c3811ac9d")
+	)
+)
