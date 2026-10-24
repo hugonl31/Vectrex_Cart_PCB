@@ -279,7 +279,7 @@
 <line x1="890" y1="236" x2="860" y2="236" class="pin"/>
 <text x="886" y="233" class="num" text-anchor="end">8</text>
 <text x="896" y="240" class="pname" text-anchor="start">D3</text>
-<text x="856" y="240" class="net" text-anchor="end">D3</text>
+<text x="856" y="240" class="net" text-anchor="end">GND</text>
 <line x1="890" y1="254" x2="860" y2="254" class="pin"/>
 <text x="886" y="251" class="num" text-anchor="end">9</text>
 <text x="896" y="258" class="pname" text-anchor="start">Q3</text>
@@ -299,11 +299,11 @@
 <line x1="1040" y1="146" x2="1070" y2="146" class="pin"/>
 <text x="1044" y="143" class="num" text-anchor="start">18</text>
 <text x="1034" y="150" class="pname" text-anchor="end">D7</text>
-<text x="1074" y="150" class="net" text-anchor="start">D7</text>
+<text x="1074" y="150" class="net" text-anchor="start">GND</text>
 <line x1="1040" y1="164" x2="1070" y2="164" class="pin"/>
 <text x="1044" y="161" class="num" text-anchor="start">17</text>
 <text x="1034" y="168" class="pname" text-anchor="end">D6</text>
-<text x="1074" y="168" class="net" text-anchor="start">D6</text>
+<text x="1074" y="168" class="net" text-anchor="start">GND</text>
 <line x1="1040" y1="182" x2="1070" y2="182" class="pin"/>
 <text x="1044" y="179" class="num" text-anchor="start">16</text>
 <text x="1034" y="186" class="pname" text-anchor="end">Q6</text>
@@ -315,11 +315,11 @@
 <line x1="1040" y1="218" x2="1070" y2="218" class="pin"/>
 <text x="1044" y="215" class="num" text-anchor="start">14</text>
 <text x="1034" y="222" class="pname" text-anchor="end">D5</text>
-<text x="1074" y="222" class="net" text-anchor="start">D5</text>
+<text x="1074" y="222" class="net" text-anchor="start">GND</text>
 <line x1="1040" y1="236" x2="1070" y2="236" class="pin"/>
 <text x="1044" y="233" class="num" text-anchor="start">13</text>
 <text x="1034" y="240" class="pname" text-anchor="end">D4</text>
-<text x="1074" y="240" class="net" text-anchor="start">D4</text>
+<text x="1074" y="240" class="net" text-anchor="start">GND</text>
 <line x1="1040" y1="254" x2="1070" y2="254" class="pin"/>
 <text x="1044" y="251" class="num" text-anchor="start">12</text>
 <text x="1034" y="258" class="pname" text-anchor="end">Q4</text>

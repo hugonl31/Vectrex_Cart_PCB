@@ -21,7 +21,7 @@ logos (front and back), mounting holes, GND fill and "THIS SIDE UP". 54 x 66 mm,
 | `vectrex-cartridge-512k-gerbers.zip` | Gerbers + drill files for the board maker (JLCPCB, PCBWay...) |
 | `images/` | 3D renders, the copper layers (`pcb_front.svg`, `pcb_back.svg`) and the schematic |
 | `make_board.py` | builds the board from v1 (parts, nets, placement) - KiCad's Python |
-| `route.py` | export to / import from Freerouting (the autorouter used) |
+| `routing/` | the router used (own, 45 degree / bundled lanes) and its plan - see Routing below |
 | `silk.py` | the part names on the silkscreen |
 
 ## Circuit
@@ -29,7 +29,7 @@ logos (front and back), mounting holes, GND fill and "THIS SIDE UP". 54 x 66 mm,
 | Part | Connections |
 |---|---|
 | **U1** SST39SF040 (512 KB flash) in a PLCC-32 socket | A0-A14, D0-D7 from the cartridge port. **A15 = PB6** (port pin 35, as on v1), **A16 / A17 / A18 = U2 Q0 / Q1 / Q2**. /CE = port pin 16. /OE = U3 (below). /WE = JP2. |
-| **U2** 74HC377 bank latch (SOIC-20W) | D1-D8 = data bus D0-D7, CLKEN (pin 1) = R/W (port 30), CLK (pin 11) = U4 (/CART OR A14). A write to $0000-$3FFF stores the bank number. 1Q-3Q = A16-A18; 4Q-8Q free (for later, e.g. a 1 MB chip has no more pins - spare outputs for LEDs or more chips). |
+| **U2** 74HC377 bank latch (SOIC-20W) | D1-D3 = data bus D0-D2, CLKEN (pin 1) = R/W (port 30), CLK (pin 11) = U4 (/CART OR A14). A write to $0000-$3FFF stores the bank number. 1Q-3Q = A16-A18. D4-D8 (pins 8, 13, 14, 17, 18) are tied to GND: their outputs 4Q-8Q are not used, and five fewer data branches leave room for tidy routing. |
 | **U3** 74HC00 (SOIC-14) | gate 1: E = NAND(/OE pin 12, /OE pin 12); gate 2: flash /OE = NAND(E, R/W). The flash only drives the bus when the CPU reads - the datasheet (table 4-1) says that with /OE low it may drive the bus even during a write, which would fight the CPU writing the bank number. Gates 3 and 4: inputs to GND. |
 | **U4** 74HC1G32 OR gate (SOT-23-5) | latch clock = /CART OR A14: only writes to the lower 16 KB ($0000-$3FFF) reach the latch (pin 1 /CART, 2 A14, 3 GND, 4 out, 5 +5 V). |
 | **R1** 3.3K pull-up | on PB6 = A15, as v1: a defined bank from power-on. |
@@ -87,10 +87,22 @@ the HCT versions (TTL input levels, same pins, same price range) are the safe ch
 The SST39SF020A (256 KB) and SST39SF010A (128 KB) fit the same socket: with them A18 (and A17) are not
 connected inside the chip, the banks just repeat.
 
+## Routing
+
+The traces leave every edge finger straight up, then run as bundled lanes in 0 / 45 / 90 degree steps
+with as few bends as possible; fingers without a function (/HALT 1, /NMI 34, /IRQ 36) have no copper at
+all, and the two +5 V fingers (2 and 4) are joined by a wide track. The PLCC socket is turned 180 degrees
+and placed 4 mm higher than in the first version, so the address bus reaches it from inside. GND: a fill
+on both sides, joined by stitching vias wherever a piece of it would otherwise be cut off.
+
 ## Checks
 
-* KiCad 9 DRC: no unconnected items. Remaining, accepted: the edge fingers share one solder-mask opening
-  (as v1); a silkscreen label touches a finger's pin number and JP2's "3" touches its pad.
+* KiCad 9 DRC with the project's rules (0.152 mm clearance, +5 V and GND 0.254 mm / 0.61 mm tracks): no
+  unconnected items, no clearance errors. Remaining, accepted (as v1): the edge fingers share one solder-mask
+  opening; a silkscreen label touches a finger's pin number and JP2's "3" touches its pad; the edge connector's
+  and KiCad library footprints' "differs from library" notes.
+* Every piece of the GND fill (front and back) is tied to ground - checked with a connectivity pass over the
+  pads, tracks, vias and fills.
 * No vias under the back's parts legend.
 * No tracks in the fingers' contact area (both sides): tracks only meet a finger at its top 1.6 mm.
 * Pinouts checked against the datasheets: SST39SF040 (DS20005022, PLCC-32 = JEDEC numbering), SN74HC377

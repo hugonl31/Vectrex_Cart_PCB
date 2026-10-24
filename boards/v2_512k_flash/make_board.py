@@ -6,7 +6,7 @@ Circuit (see README.md in this folder):
   U1 SST39SF040 (PLCC-32 socket): A0-A14, D0-D7 from the port; A15 = PB6 (as v1); A16/A17/A18 = U2 Q0/Q1/Q2;
      /CE = port 16 (V-CE); /OE = FL_OE (U3); /WE = JP2 (R/W = the game saves into the flash, or +5 V)
   U2 74HC377 (SOIC-20W): D0-D7 = data bus, /E = R/W (port 30), CP = /CART (port 32): a write to the cartridge
-     area stores the bank number. Q3-Q7 free.
+     area stores the bank number. Q3-Q7 free, their inputs D3-D7 (pins 8 13 14 17 18) to GND.
   U3 74HC00 (SOIC-14): gate A: E = NAND(V-OE, V-OE); gate B: FL_OE = NAND(E, R/W) - the flash drives the bus only
      on reads (with /OE low during a write it may drive it: datasheet table 4-1). Gates C, D: inputs to GND.
   U4 74HC1G32 (SOT-23-5): latch clock = /CART OR A14 - only writes to $0000-$3FFF set the bank, so the flash's
@@ -69,12 +69,13 @@ A = {str(p): 'C_A%d' % a for p, a in ((12, 0), (11, 1), (10, 2), (9, 3), (8, 4),
 D = {str(p): 'C_D%d' % d for p, d in ((13, 0), (14, 1), (15, 2), (17, 3), (18, 4), (19, 5), (20, 6), (21, 7))}
 u1 = dict(A, **D)
 u1.update({'1': 'BA18', '2': 'BA16', '3': 'V-PB6', '30': 'BA17', '16': 'GND', '32': '+5V', '22': 'V-CE', '24': 'FL_OE', '31': 'FL_WE'})
-place(lib('Package_LCC', 'PLCC-32_THT-Socket'), 'U1', 'SST39SF040 (PLCC-32 socket)', 136.62, 101.2, 90, u1)
+place(lib('Package_LCC', 'PLCC-32_THT-Socket'), 'U1', 'SST39SF040 (PLCC-32 socket)', 146.78, 99.74, 270, u1)   # (turned: the bus from inside)
 
 # U2: 74HC377 bank latch
 u2 = {'1': 'V-RW', '11': 'LCLK', '10': 'GND', '20': '+5V', '2': 'BA16', '5': 'BA17', '6': 'BA18'}
-u2.update({str(p): 'C_D%d' % d for p, d in ((3, 0), (4, 1), (7, 2), (8, 3), (13, 4), (14, 5), (17, 6), (18, 7))})
-place(lib('Package_SO', 'SOIC-20W_7.5x12.8mm_P1.27mm'), 'U2', '74HC377', 122.6, 98.2, 0, u2)
+u2.update({str(p): 'C_D%d' % d for p, d in ((3, 0), (4, 1), (7, 2))})
+u2.update({str(p): 'GND' for p in (8, 13, 14, 17, 18)})   # (D4-D8: their outputs are not used)
+place(lib('Package_SO', 'SOIC-20W_7.5x12.8mm_P1.27mm'), 'U2', '74HC377', 122.6, 98.2, 180, u2)
 
 # U3: 74HC00 - /OE only on reads
 u3 = {'1': 'V-OE', '2': 'V-OE', '3': 'E', '4': 'E', '5': 'V-RW', '6': 'FL_OE', '7': 'GND', '14': '+5V',
@@ -84,7 +85,7 @@ place(lib('Package_SO', 'SOIC-14_3.9x8.7mm_P1.27mm'), 'U3', '74HC00', 162.0, 97.
 # U4: 74HC1G32 - the latch clock only for the cartridge's lower 16 KB (A14 low)
 place(lib('Package_TO_SOT_SMD', 'SOT-23-5'), 'U4', '74HC1G32', 119.6, 108.8, 0,
       {'1': 'V-CART', '2': 'C_A14', '3': 'GND', '4': 'LCLK', '5': '+5V'})
-place(keep['R1_'], 'R1', '3.3K', 141.7, 89.0, 0, {'1': 'V-PB6', '2': '+5V'})
+place(keep['R1_'], 'R1', '3.3K', 161.0, 89.0, 0, {'1': 'V-PB6', '2': '+5V'})
 
 # decoupling: C1 flash, C2 latch, C3 gate
 c1 = keep['C1_']
