@@ -4,3 +4,6 @@ fp-info-cache
 *-backups/
 _autosave-*
 *.lck
+
+# private working folder (old Cart_PCB: adapter, datasheets, label scans) - never commit
+_work/
